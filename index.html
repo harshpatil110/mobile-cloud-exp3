@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mobile Cloud Experiment</title>
+</head>
+<body>
+  <h2>AWS Amplify Mobile Cloud App</h2>
+
+  <input id="note" placeholder="Enter note">
+  <button onclick="add()">Add</button>
+
+  <ul id="list"></ul>
+
+  <script>
+    function add(){
+      let v=document.getElementById("note").value;
+      let li=document.createElement("li");
+      li.innerText=v;
+      document.getElementById("list").appendChild(li);
+    }
+  </script>
+</body>
+</html>
